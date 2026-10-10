@@ -1,0 +1,174 @@
+
+.ticket-container {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ticket {
+  width: 900px;
+  height: 280px;
+  background: #ffffff; /* White background for a clean ticket surface */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: 1px solid #d1d1d1; /* Soft border for definition */
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.left,
+.right {
+  position: absolute;
+  top: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.left {
+  
+  left: -15px;
+}
+
+.right {
+  right: -15px;
+}
+
+.left li,
+.right li {
+  width: 0;
+  height: 14px;
+}
+
+.left li {
+  border: 5px solid transparent;
+  border-right: 10px solid #e0e0e0; /* Soft gray for edge accents */
+  margin-bottom: 5px;
+}
+
+.right li {
+  border: 5px solid transparent;
+  border-left: 10px solid #e0e0e0;
+  margin-bottom: 5px;
+}
+
+.ticket-header {
+  padding: 15px;
+  background: #61dabf; /* Professional dark blue */
+  text-align: center;
+  color: #ffffff; /* White text for contrast */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.airline {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.boarding {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.content {
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  height: 170px;
+  background: #f9f9f9; /* Light gray for content area */
+}
+
+.main-details {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #2d2d2d;
+}
+
+.departure,
+.arrival {
+  font-size: 38px;
+  color: #333333; /* Dark gray for emphasis */
+}
+
+.plane {
+  font-size: 30px;
+  margin: 0 10px;
+  color: #4267B2; /* Matches header for consistency */
+}
+
+.sub-content {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  background: #ffffff; /* White for a clean contrast */
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-top: 1px solid #d1d1d1; /* Subtle border to define sections */
+}
+
+.name,
+.flight,
+.gate,
+.boardingtime,
+.seat {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  color: #6b6b6b; /* Subtle gray for text */
+}
+
+.name span,
+.flight span,
+.gate span,
+.boardingtime span,
+.seat span {
+  font-size: 16px;
+  color: #333333; /* Darker gray for emphasis */
+}
+
+.barcode {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  height: 15px;
+  width: 20%;
+  background: repeating-linear-gradient(
+    90deg,
+    #333333,
+    #333333 3px, /* Dark gray for bars */
+    #ffffff 3px,
+    #ffffff 6px
+  );
+}
+
+.book-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #5ddec2; /* Professional green */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.book-button:hover {
+  background-color: #87eed8; /* Darker green on hover */
+}
+
+.booking-message {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #c0392b; /* Red for alerts */
+  font-weight: bold;
+}

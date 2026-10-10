@@ -1,0 +1,303 @@
+.cart-title {
+  margin-bottom: 5vh;
+}
+/* Center the entire cart container on the page */
+.cart-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  padding: 0 20px; /* Optional for some space on the sides */
+  background-color: #fcfcfc; /* Optional background color */
+}
+
+.cart-card {
+  width: 100%;
+  max-width: 1200px; /* You can adjust the max-width based on your design */
+  margin: 0 auto; /* Centers the card horizontally */
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 1rem;
+  background-color: #fff;
+}
+
+@media (max-width: 767px) {
+  .cart-card {
+    margin-top: 3vh; /* Adjust spacing for smaller screens */
+    width: 100%;
+  }
+}
+
+.cart-container {
+  background-color: #fff;
+  padding: 4vh 5vh;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+@media (max-width: 767px) {
+  .cart-container {
+    padding: 4vh;
+    border-bottom-left-radius: unset;
+    border-top-right-radius: 1rem;
+  }
+}
+
+.summary-container {
+  background-color: #fafdfd;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 4vh;
+  color: rgb(65, 65, 65);
+}
+
+@media (max-width: 767px) {
+  .summary-container {
+    border-top-right-radius: unset;
+    border-bottom-left-radius: 1rem;
+  }
+}
+
+.cart-title b {
+  font-size: 1.5rem;
+}
+
+.cart-main {
+  margin: 0;
+  padding: 2vh 0;
+  width: 100%;
+}
+.custom-input {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.address-input-container {
+  margin-bottom: 10px;
+}
+
+.remove-item {
+  margin-left: 50px;
+  font-size: 0.7rem;
+}
+
+.cart-img {
+  width: 3.5rem;
+}
+.payment-method-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px; /* Optional margin to separate from other sections */
+}
+
+.payment-method-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between payment options */
+  width: 100%; /* Ensure it takes up the full width of the container */
+}
+
+.payment-option-container {
+  display: flex;
+  justify-content: space-between; /* Ensures the label is left aligned and radio button is right aligned */
+  align-items: center;
+  gap: 15px; /* Space between label and radio button */
+}
+
+.payment-method-box {
+  display: flex;
+  justify-content: space-between; /* Align the label and the radio button */
+  align-items: center;
+  padding: 10px ;
+  border: 1px solid #5ddec2; /* Border color matching your theme */
+  border-radius: 8px; /* Rounded corners for the border */
+  width:900px; /* Ensures the box takes up the full width of the container */
+  background-color: #f9f9f9; /* Light background for each option */
+}
+
+.payment-radio-button {
+  accent-color: #5ddec2; /* Custom color for the radio button */
+  width: 20px;
+  height: 20px;
+}
+
+.payment-method-label {
+  font-size: 16px;
+  color: #000000; /* Black text color for the label */
+  font-weight: 500; /* Make the text more professional */
+}
+
+.checkout-btn {
+  background-color: #b8b3b3;
+  border-color: #b8b3b3;
+  color: white;
+  width: 100%;
+  font-size: 0.7rem;
+  margin-top: 4vh;
+  padding: 1vh;
+  border-radius: 0;
+}
+
+.checkout-btn:focus {
+  box-shadow: none;
+  outline: none;
+  color: white;
+}
+
+.checkout-btn:hover {
+  color: white;
+}
+
+#promo-code {
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.185)), url("https://img.icons8.com/small/16/000000/long-arrow-right.png");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: center;
+}
+
+.cart-card {
+  margin: auto;
+  max-width: 950px;
+  width: 90%;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 1rem;
+  border: transparent;
+}
+
+@media(max-width: 767px) {
+  .cart-card {
+      margin: 3vh auto;
+  }
+}
+
+.cart-container {
+  background-color: #fff;
+  padding: 4vh 5vh;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+@media(max-width: 767px) {
+  .cart-container {
+      padding: 4vh;
+      border-bottom-left-radius: unset;
+      border-top-right-radius: 1rem;
+  }
+}
+
+
+
+@media(max-width: 767px) {
+  .summary-container {
+      border-top-right-radius: unset;
+      border-bottom-left-radius: 1rem;
+  }
+}
+
+.summary-container .col-2 {
+  padding: 0;
+}
+
+.summary-container .col-10 {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+.cart-title b {
+  font-size: 1.5rem;
+}
+
+.cart-main {
+  margin: 0;
+  padding: 2vh 0;
+  width: 100%;
+}
+
+.col-2,
+.col {
+  padding: 0 1vh;
+}
+
+a {
+  padding: 0 1vh;
+}
+
+.remove-item {
+  margin-left: 50px; 
+  
+  font-size: 0.7rem;
+}
+
+.cart-img {
+  width: 3.5rem;
+}
+
+.back-to-shop-link {
+  margin-top: 4.5rem;
+}
+
+.cart-summary-header {
+  margin-top: 4vh;
+}
+
+.cart-summary-divider {
+  margin-top: 1.25rem;
+}
+
+.cart-form {
+  padding: 2vh 0;
+}
+
+.select-input,
+.text-input {
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  padding: 1.5vh 1vh;
+  margin-bottom: 4vh;
+  outline: none;
+  width: 100%;
+  background-color: rgb(247, 247, 247);
+}
+
+.text-input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.checkout-btn {
+  background-color: #b8b3b3;
+  border-color: #b8b3b3;
+  color: white;
+  width: 100%;
+  font-size: 0.7rem;
+  margin-top: 4vh;
+  padding: 1vh;
+  border-radius: 0;
+}
+
+.checkout-btn:focus {
+  box-shadow: none;
+  outline: none;
+  color: white;
+}
+
+.checkout-btn:hover {
+  color: white;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+#promo-code {
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.185)), url("https://img.icons8.com/small/16/000000/long-arrow-right.png");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: center;
+}

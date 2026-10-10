@@ -1,0 +1,114 @@
+/* Existing styles */
+
+.img-bg-plane {
+    background-size: cover;
+    width: auto;
+    background-position: center;
+    height: 80vh;
+  }
+  
+  .img-container-rosemary {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 630px;
+    margin-top: 100px;
+  }
+  
+  .container-first {
+    margin-top: 170px;
+  }
+  
+  .card-info {
+    width: 55%;
+  }
+  
+  .btn-more {
+    color: #5ddec2;
+    background-color: white;
+    border: #5ddec2 solid;
+  }
+  
+  .btn-more:hover {
+    border: #5ddec2 solid;
+    color: #5ddec2;
+    box-shadow: #5ddec2 0px 0px 10px;
+}
+
+.btn-buy{
+    color: white;
+    background-color: #5ddec2;
+    border: #5ddec2 solid;
+}
+
+.btn-buy:hover{
+    border: #5ddec2 solid;
+    background-color: #5ddec2;
+    color: white;
+    box-shadow: #5ddec2 0px 0px 10px;
+}
+
+.btn-login{
+    color: white;
+    background-color: #5ddec2;
+    border: #5ddec2 solid;
+  }
+  
+  .btn-login:hover {
+    border: #5ddec2 solid;
+    color: white;
+    box-shadow: #5ddec2 0px 0px 10px;
+  }
+  
+  .img-square {
+    object-fit: cover;
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
+  }
+  
+  .img-collage {
+    height: fit-content;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .actv-div {
+    background-repeat: no-repeat;
+    background-size: 59%;
+    background-position-x: -5%;
+    background-position-y: -7%;
+  }
+  
+  .select-zone {
+    background-color: white;
+    border-color: black;
+    color: black;
+    appearance: none;
+    width: 30%;
+  }
+  
+  .btn-view {
+    color: white;
+    background-color: #5ddec2;
+    border: #5ddec2 solid;
+  }
+  
+  .filter-div {
+    background-color: rgb(255, 255, 255, 0.3);
+    border-radius: 10px;
+    width: 85%;
+    padding: 0px;
+  }
+  
+  .btn-go {
+    color: white;
+    background-color: #5ddec2;
+    border: #5ddec2 solid;
+    border-radius: 0.5vw;
+    width: 30%;
+    margin: auto;
+  }
+  
+  

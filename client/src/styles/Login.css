@@ -1,0 +1,115 @@
+/* Import Google Fonts at the top of your CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif; /* Use Poppins for a modern look */
+    margin: 0;
+    padding: 0;
+    color: #1c1c1c; /* Darker text for better contrast */
+    /* Removed background image for body to apply it only to login-container */
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    backdrop-filter: blur(2px);
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.9); /* Slightly more opaque background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s;
+}
+
+.login-card:hover {
+    transform: translateY(-5px); /* Subtle lift effect on hover */
+}
+
+h3 {
+    font-size: 1.8rem; /* Increased size */
+    font-weight: 600; /* Bold weight */
+    color: #333; /* Darker color */
+    text-align: center; 
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    margin-bottom: 10px;
+}
+
+h5 {
+    font-size: 1.2rem; /* Increased size */
+    font-weight: 400; /* Normal weight */
+    color: #555; /* Darker color */
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: 600; /* Bold weight for labels */
+    color: #007bff; /* Change label color to a shade of blue */
+}
+
+.form-control {
+    border: 1px solid #007bff; /* Border color */
+    border-radius: 5px;
+    padding: 10px; /* Increased padding */
+    font-size: 1rem; /* Increased font size */
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #0056b3; /* Darker border on focus */
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5); /* Focus effect */
+}
+
+.password-group {
+    position: relative; /* Position relative for the toggle icon */
+}
+
+.password-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-password {
+    cursor: pointer; /* Change cursor to pointer */
+    margin-left: -30px; /* Adjust position */
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600; /* Bold text */
+    font-size: 1rem; /* Increased size */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.link {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+    font-size: 0.9rem; /* Slightly larger link text */
+}
+
+.link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.alert {
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem; /* Slightly larger alert text */
+    color: #721c24; /* Dark red for error */
+    background-color: #f8d7da; /* Light red background */
+    border: 1px solid #f5c6cb; /* Red border */
+}

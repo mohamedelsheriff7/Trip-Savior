@@ -1,0 +1,112 @@
+.title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: #5ddec2;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .title::before,
+  .title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #5ddec2;
+  }
+
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+
+  .close {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+  }
+  
+  .line {
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: #6B6C7B;
+    border-radius: 30px;
+  }
+  
+  .line.one {
+    transform: rotate(45deg)
+  }
+  
+  .line.two {
+    transform: rotate(135deg)
+  }
+
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    background-color: #ffff;
+    color: #000;
+    width: 100%;
+    padding: 20px 05px 05px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label .input + .span {
+    color: #999;
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + .span {
+    top: 12.5px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + .span,
+  .form label .input:valid + .span {
+    color: #5ddec2;
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .input {
+    font-size: medium;
+  }

@@ -1,0 +1,148 @@
+/* Ensure that the body and html have full height */
+html, body {
+    height: 100%; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* Basic font family */
+    background: linear-gradient(135deg, #ffffff, #ffffff); /* Light blue gradient for a calming effect */
+    color: #000000; /* Black text for contrast */
+}
+
+/* Overall page container */
+.container {
+    display: flex; /* Use flexbox to align content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in width/height calculation */
+    overflow: visible; /* Prevent scrolling */
+}
+
+/* Left image column */
+.imageColumn {
+    width: 25%; /* Smaller width for images */
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    gap: 10px; /* Smaller gap between images */
+    padding: 10px;
+    height: 80%; /* Adjust height to fit content better */
+    justify-content: center; /* Center images vertically */
+}
+
+/* Image styling */
+.imageColumn img {
+    width: 100%; /* Ensure images fill their container */
+    height: 150px; /* Fixed height for images to fit the page */
+    object-fit: cover; /* Ensure the images are cropped appropriately */
+    border-radius: 12px; /* Rounded corners for a smooth look */
+    border: 4px solid black; /* Add a black border around each image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition for rotation */
+}
+
+/* Rotate images for contrast */
+.imageColumn img:nth-child(odd) {
+    transform: rotate(-5deg); /* Rotate odd images */
+}
+
+.imageColumn img:nth-child(even) {
+    transform: rotate(5deg); /* Rotate even images */
+}
+
+/* Main content styling */
+.mainContent {
+    width: 70%; /* Larger width for form */
+    padding: 30px;
+    height: 80%; /* Adjust height to match the image column */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Header styling */
+.header {
+    font-size: 2.5rem; /* Larger title for better emphasis */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 20px;
+    color: #2c3e50; /* Darker text for contrast */
+    text-align: center; /* Center align header */
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 0.3px 2px; /* Reduced padding for smaller buttons */
+    font-size: 1rem; /* Slightly smaller font size */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+    margin: 2px; /* Adjusted margin for better spacing */
+    width: calc(100% - 16px); /* Adjusted width for consistency */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Subtler shadow */
+    position: relative;
+}
+
+/* Button hover effects */
+.btn:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Success button */
+.btnSuccess {
+    background-color: #007bff; /* Bright blue background */
+    color: white; /* White text */
+}
+.btnSuccess:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Info button */
+.btnInfo {
+    background-color: #17a2b8; /* Teal background */
+    color: white; /* White text */
+}
+.btnInfo:hover {
+    background-color: #138496; /* Darker teal on hover */
+}
+
+/* Warning button */
+.btnWarning {
+    background-color: #ffc107; /* Yellow background */
+    color: white; /* White text */
+}
+.btnWarning:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+}
+/* Profile.module.css */
+
+/* Profile.module.css */
+
+/* Add this for the btnPrimary class */
+.btnPrimary {
+    background-color: #ace066; /* Use the same background color as btnSuccess */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 12px 30px; /* Match padding of other buttons */
+    text-align: center; /* Center the text */
+    display: inline-block; /* Inline-block for alignment */
+    font-size: 1.1rem; /* Match font size */
+    margin: 10px; /* Space for separation */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 50px; /* Same rounded shape */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Hover effect for btnPrimary */
+.btnPrimary:hover {
+    background-color: #7da70b; /* Darker shade on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}

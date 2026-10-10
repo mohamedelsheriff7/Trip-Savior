@@ -1,0 +1,199 @@
+.formContainer {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .itineraryForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input,
+  textarea,
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .submitButton {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submitButton:hover {
+    background-color: #218838;
+  }
+  
+  .searchContainer {
+    position: absolute; /* or 'fixed' */
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 100; /* Ensure it stays on top */
+  }
+  
+  .searchInput {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .activityList {
+    position: absolute;
+    background-color: white; /* or any background color */
+    border: 1px solid #ccc;
+    list-style: none;
+    max-height: 200px; /* Limit the height */
+    overflow-y: auto; /* Enable scrolling if needed */
+    z-index: 1000; /* Ensure it stays on top */
+  }
+  
+  .starRating {
+    display: flex;
+    cursor: pointer;
+    font-size: 40px; /* Increased size of the stars */
+    justify-content: flex-start; /* Align stars to the left */
+  }
+  
+  .filledStar {
+    color: yellow; /* Color for filled stars */
+    margin-right: 10px; /* Increased space between stars */
+  }
+  
+  .emptyStar {
+    color: lightgray; /* Color for unfilled stars */
+    margin-right: 10px; /* Increased space between stars */
+  }
+  /* LanguageDropdown.module.css */
+.dropdownContainer {
+    position: relative;
+  }
+  
+  .customSelect {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    appearance: none; /* Remove default arrow */
+  }
+  
+  .languageIcon {
+    width: 20px; /* Adjust width as needed */
+    height: 20px; /* Adjust height as needed */
+    margin-right: 5px; /* Space between icon and text */
+    vertical-align: middle; /* Align icon vertically with text */
+  }
+  .flagIcon {
+    width: 20px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 5px; /* Space between flag and text */
+  }
+  .addButton {
+    margin-left: 10px;
+    background-color: #4caf50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .addButton:hover {
+    background-color: #45a049; /* Darker green */
+  }
+  
+  .activityList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .activityList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* Assuming you already have other styles defined */
+
+  .activityItem {
+    display: flex;
+    justify-content: space-between; /* Aligns text and button */
+    align-items: center; /* Vertically centers items */
+    margin: 4px 0; /* Add some space between items */
+    font-size: 30px; /* Adjust the font size as needed */
+  }
+  .removeButton {
+    background-color: red; /* Customize your button color */
+    color: white; /* Customize text color */
+    border: none;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 5px 10px; /* Adjust button padding */
+  }
+  
+  
+  .placeholderText {
+    color: gray; /* Color for placeholder text */
+  }
+  .preferencesCheckboxes {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .preferencesCheckboxes div {
+    margin-bottom: 8px; /* Space between checkboxes */
+  }
+  .activityText {
+    font-size: 18px; /* Adjust font size to make it smaller */
+  }
+  
+  .selectedActivity {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between text and button */
+    align-items: center; /* Center vertically */
+    font-size: 20px;
+  }
+  
+  .removeButton {
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    color: red; /* Set color to red */
+    cursor: pointer; /* Change cursor to pointer */
+    font-size: 16px; /* Adjust font size for visibility */
+    margin-left: 10px; /* Space between text and button */
+  }
+  .star {
+    cursor: pointer;
+    font-size: 24px; /* Adjust size as needed */
+    color: gray; /* Default color for stars */
+    transition: color 0.2s ease; /* Smooth transition for color change */
+  }
+  
+  .filled {
+    color: yellow; /* Color for filled stars */
+  }

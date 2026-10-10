@@ -1,0 +1,404 @@
+/* General Card Styling */
+.cardproduct {
+    width: 240px; /* Increased width for a balanced layout */
+    height: 320px; /* Adjusted height for uniformity */
+    padding: 0.5em;
+    background: #fbfeff;
+    border-radius: 0px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 35px;
+   
+}
+
+.cardproduct:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(43, 147, 155, 0.1), 0 4px 6px rgba(66, 195, 204, 0.3);
+}
+
+/* Image Container */
+.card-img {
+    background-color: #ddd;
+    height: 50%; /* Adjusted to occupy half of the card */
+    width: 100%;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card-img:hover img {
+    transform: scale(1.1); /* Subtle zoom effect */
+}
+
+/* Information Section */
+.card-info {
+    margin-top: 10px;
+}
+
+.text-title {
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-bottom: 6px;
+    color: #333;
+    text-align: center;
+    line-height: 1.3;
+    white-space: nowrap; /* Prevents text from wrapping */
+
+    text-overflow: ellipsis; /* Adds an ellipsis (...) for overflowing text */
+}
+
+
+.text-body {
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+    margin-bottom: 12px;
+    white-space: nowrap; /* Prevents text from wrapping */
+
+    text-overflow: ellipsis; /* Adds an ellipsis (...) for overflowing text */
+}
+
+/* Footer Section */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    padding-top: 8px;
+    border-top: 1px solid #ddd;
+    background-color: #fbfeff;
+}
+
+.text-price {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
+    position: relative;
+    margin-left:-5px;
+}
+
+.card-button {
+    border: 1px solid #333;
+    padding: 0.4em;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    margin-left:25px;
+}
+
+.card-button:hover {
+    border-color: #81f5dc;
+    background-color: #87fae1;
+    color: #5ddec2;
+}
+
+.card-button svg {
+    width: 18px;
+    height: 18px;
+    border: none; /* Remove any borders */
+    outline: none; /* Remove any outlines */
+    background: none; /* Ensure no background is applied */
+    padding: 0; /* Remove any default padding */
+    margin: 0; /* Remove any default margin */
+    box-shadow: none; /* Remove any box shadow if applied */
+    
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%; /* Adjust width for smaller screens */
+        height: auto; /* Allow height to adjust dynamically */
+        margin-bottom: 16px;
+    }
+}
+.rating {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: -5px;
+    margin-left:-20px;
+  }
+  
+  .star {
+    color: #ddd;  /* Light gray for empty stars */
+  }
+  
+  .star.filled {
+    color: #ffd700;  /* Yellow color for filled stars */
+  }
+  /* Add below the existing CSS */
+
+/* Style for the "View Details" text */
+.view-details {
+    font-size: 0.9em;
+    color: #4ed4b7;  /* Blue color for the link */
+    text-align: center;
+    cursor: pointer;
+    margin-top: -5px;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .view-details:hover {
+    color: #51ccb1;  /* Darker blue on hover */
+  }
+  .modal-overlayproduct {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-contentproduct {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-content h3 {
+    margin-bottom: 15px;
+  }
+  
+  .modal-content p {
+    margin-bottom: 10px;
+  }
+  
+  .modal-overlayproduct {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-contentproduct {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative; /* Make the container relative to position the close button */
+  }
+  
+  .modal-content h3 {
+    margin-bottom: 15px;
+  }
+  
+  .modal-content p {
+    margin-bottom: 10px;
+  }
+  
+  .close-icon {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    
+    cursor: pointer;
+    color: #51ccb1; /* Set initial color */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+    font-size: 24px; /* Adjust font size to increase the icon size */
+    width: 24px; /* Adjust width */
+    height: 24px; /* Adjust height */
+    transform: scale(1); /* Optional: increase size by scaling */
+  }
+  
+  .close-icon:hover {
+    color: #44bda3; /* Change color on hover */
+  }
+  .product-image {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }  
+  /* Style for the review list */
+.reviews-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
+    margin-top: -20px; /* Remove margin */
+    font-size: 1em; /* Set consistent font size */
+    color: #666; /* Set a subtle text color */
+    text-align: center; /* Align reviews to the left */
+  }
+  
+  .review-item {
+    padding: 10px 0; /* Add spacing between reviews */
+    border-bottom: 1px solid #ddd; /* Add a light border to separate each review */
+    font-family: 'Arial', sans-serif; /* Consistent font */
+    line-height: 1.6; /* Improve readability */
+  }
+  
+  .review-item p {
+    margin: 0; /* Remove default margin */
+    color: #444; /* Slightly darker text for readability */
+  }
+  
+  .review-item:last-child {
+    border-bottom: none; /* Remove bottom border on the last review */
+  }
+  
+  /* Optional: style for "No reviews" */
+  p.no-reviews {
+    color: #888;
+    font-style: italic;
+  }
+  
+  .productsh1 {
+    font-size: 36px;              /* Set a large font size */
+    font-weight: bold;            /* Make the text bold */
+    color: #2C3E50;               /* Dark color for the text */
+    text-align: center;           /* Center the title */
+    margin-top: 180px; 
+                /* Add some space above */
+    margin-bottom: 40px;          /* Add some space below */
+    font-family: 'Arial', sans-serif; /* Choose a modern font */
+    letter-spacing: 2px;  
+    margin:"90px auto";        /* Add some spacing between letters */
+  }
+  
+  .search-containerProduct {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 10px; /* Padding inside the container */
+    display: flex; /* Flexbox for alignment */
+    gap: 10px; /* Space between input and button */
+    z-index: 1000; /* Ensure it stays on top */
+    width: 400px; /* Increased width for the entire container */
+}
+
+.search-containerProduct input {
+    flex: 1; /* Input takes all available space */
+    padding: 10px 14px; /* Increased padding inside input */
+    font-size: 14px; /* Font size for better readability */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners for input */
+    outline: none; /* Remove default outline */
+    transition: border-color 0.3s; /* Smooth border transition */
+}
+
+.search-containerProduct input:focus {
+    border-color: #4ed4b7; /* Green border on focus */
+}
+
+.search-containerProduct button {
+    background-color: #4ed4b7; /* Green background */
+    color: #fff; /* White text */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 8px 16px; /* Padding inside the button */
+    font-size: 14px; /* Font size for readability */
+    cursor: pointer; /* Pointer cursor for hover */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.search-containerProduct button:hover {
+    background-color: #3aa98b; /* Darker green on hover */
+}
+
+.search-containerProduct button:active {
+    background-color: #358474; /* Even darker green on click */
+}
+
+  .filter-slider {
+    top: 70px;
+    right: 20px;
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 10px; /* Padding inside the container */
+    z-index: 1000; /* Ensure it stays on top */
+    width: 300px; /* Increased width for better visibility */
+  height: auto; /* Allow the content to define the height */
+  }
+  
+  .btn-apply-filter {
+    background-color: #4ed4b7; /* Green background */
+    color: #fff; /* White text */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 8px 16px; /* Padding inside the button */
+    font-size: 14px; /* Font size for readability */
+    cursor: pointer; /* Pointer cursor for hover */
+    transition: background-color 0.3s; /* Smooth hover effect */
+  }
+  
+  .btn-apply-filter:hover {
+    background-color: #3aa98b; /* Darker green on hover */
+  }
+  
+  .btn-apply-filter:active {
+    background-color: #358474; /* Even darker green on click */
+  }
+  .product-container {
+    display: flex;
+    align-items: flex-start; /* Align items at the top, so text and image are not vertically shifted */
+    justify-content: space-between; /* Spaces the content between the left (details) and right (image) */
+  }
+  
+  .left-alignproduct {
+    text-align: left; /* Ensures the text is left-aligned */
+    margin-right: 20px; /* Space between text and image */
+  }
+  
+  .product-image {
+    flex: 0 0 150px; /* Fixed width for the image container */
+    margin-left: 20px; /* Space between image and details */
+    margin-top: 0; /* No top margin to keep the image aligned with the details */
+  }
+  
+  .product-image img {
+    width: 150px; /* Fixed width for the image */
+    height: 150px; /* Fixed height for the image */
+    object-fit: cover; /* Ensures the image maintains aspect ratio while covering the fixed size */
+    border-radius: 8px; /* Optional: Adds rounded corners to the image */
+  }
+  .card-info .bi-heart {
+    position: absolute;
+    top: 5px; /* Adjust this value to position the heart a little away from the top */
+    right: 5px; /* Adjust this value to position the heart a little away from the right */
+    cursor: pointer; /* Makes the cursor look like a hand when hovering over the heart */
+    transition: fill 0.3s ease; /* Smooth transition for color change */
+  }
+  
+  .card-info .heart-filled {
+    fill: rgb(0, 0, 0); /* Red color when heart is filled */
+  }

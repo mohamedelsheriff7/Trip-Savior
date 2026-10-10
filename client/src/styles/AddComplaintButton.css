@@ -1,0 +1,103 @@
+.icon-btn {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #cdcdcd;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    transition: width 0.2s ease-in-out;
+    font-weight: 500;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .add-complaint-btn:hover {
+    width: 150px; /* Increased width to add more space */
+    padding-left: 10px; /* Add space on the left */
+    padding-right: 10px; /* Add space on the right */
+  }
+  
+  .add-complaint-btn::before,
+  .add-complaint-btn::after {
+    transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 10px;
+    top: calc(50% - 2px);
+    background: #5ddec2;
+  }
+  
+  .add-complaint-btn::after {
+    right: 14px;
+    overflow: hidden;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+  
+  .add-complaint-btn::before {
+    left: 14px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+  
+  .icon-btn:focus {
+    outline: none;
+  }
+  
+  .btn-txt {
+    opacity: 0;
+    transition: opacity 0.2s;
+    white-space: nowrap;  /* Prevent text from wrapping */
+    display: inline-block;
+  }
+  
+  .add-complaint-btn:hover::before,
+  .add-complaint-btn:hover::after {
+    width: 4px;
+    border-radius: 2px;
+  }
+  
+  .add-complaint-btn:hover .btn-txt {
+    opacity: 1;
+  }
+  
+  .add-complaint-icon::after,
+  .add-complaint-icon::before {
+    transition: all 0.2s ease-in-out;
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 2px;
+    top: calc(50% - 10px);
+    background: #5ddec2;
+    overflow: hidden;
+  }
+  
+  .add-complaint-icon::before {
+    left: 22px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+  
+  .add-complaint-icon::after {
+    right: 22px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+  
+  .add-complaint-btn:hover .add-complaint-icon::before {
+    left: 15px;
+    height: 4px;
+    top: calc(50% - 2px);
+  }
+  
+  .add-complaint-btn:hover .add-complaint-icon::after {
+    right: 15px;
+    height: 4px;
+    top: calc(50% - 2px);
+  }
+  

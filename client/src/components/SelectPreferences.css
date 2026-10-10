@@ -1,0 +1,134 @@
+/* Full-screen container for wrapping the whole content */
+.full-screen-container {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    min-height: calc(100vh - 60px); /* Full screen minus navbar height */
+    padding: 20px;
+  
+  }
+  
+  /* Preferences container */
+  .preferences-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px; /* Increased width */
+    width: 100%;
+    padding: 40px; /* Adjusted padding for more space */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px auto; /* Centering the container horizontally */
+    min-height: 400px; /* Decreased height */
+  }
+  
+  
+  
+  .preferences-title {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .section-title {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .selected-preferences,
+  .available-preferences {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .no-preferences {
+    color: #999;
+    text-align: center;
+  }
+  
+  .preferences-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .preference-chip {
+    display: flex;
+    align-items: center;
+    background-color: #e6f2ff;
+    color: #0066cc;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  
+  .remove-preference {
+    background: none;
+    border: none;
+    color: #0066cc;
+    margin-left: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .preferences-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .preference-button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .preference-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .add-icon {
+    font-weight: bold;
+    color: #0066cc;
+  }
+  
+  @media (max-width: 600px) {
+    .preferences-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .preferences-container {
+      padding: 20px;
+      margin: 0 10px;
+    }
+  }

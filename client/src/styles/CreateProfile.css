@@ -1,0 +1,128 @@
+/* Ensure that the body and html have full height */
+html, body {
+    height: 100%; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Updated font for a modern look */
+    background: #f8f9fa; /* Lighter background for a cleaner look */
+}
+
+/* Scoped styles for CreateProfile component */
+.create-profile-container {
+    display: flex; /* Use flexbox to align content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full height of the viewport */
+    padding: 20px; /* Padding around the container */
+}
+
+/* White container around all fields and button */
+.create-profile-main {
+    width: 100%; /* Full width for responsiveness */
+    max-width: 400px; /* Limit width for larger screens */
+    padding: 30px; /* Comfortable padding */
+    background-color: white; /* White background for form */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title styling */
+.create-profile-header {
+    text-align: center; /* Center the header text */
+    margin-bottom: 30px; /* Space between header and form */
+    font-size: 2rem; /* Larger font size for prominence */
+    color: #343a40; /* Darker text for contrast */
+    font-weight: 700; /* Bolder font */
+}
+
+/* Fieldset styling */
+.create-profile-fieldset {
+    border: none; /* Remove default border */
+    margin-bottom: 20px; /* Spacing between fieldsets */
+}
+
+/* Input container styling */
+.input-container {
+    position: relative; /* For absolute positioning of labels */
+    margin-bottom: 20px; /* Spacing between inputs */
+}
+
+/* Input styling */
+.create-profile-input {
+    width: 100%; /* Full width for inputs */
+    padding: 12px; /* Comfortable padding for inputs */
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 8px; /* Rounded corners for inputs */
+    font-size: 1rem; /* Font size for readability */
+    transition: border-color 0.3s; /* Smooth border transition */
+}
+
+/* Floating label styling */
+.floating-label {
+    position: absolute; /* Position label absolutely */
+    left: 10px; /* Align label to the left */
+    top: 10px; /* Position label above the input */
+    font-size: 1rem; /* Font size for labels */
+    color: #aaa; /* Light color for labels */
+    transition: 0.2s ease all; /* Smooth transition */
+}
+
+/* Change styles when input is focused or has content */
+.create-profile-input:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.create-profile-input:focus + .floating-label,
+.create-profile-input:not(:placeholder-shown) + .floating-label {
+    top: -8px; /* Move label above the input */
+    font-size: 0.85rem; /* Smaller font size when floating */
+    color: #007bff; /* Change color to match input focus */
+}
+
+/* Button styling */
+.create-profile-btn {
+    display: inline-block; /* Allows spacing around the buttons */
+    border-radius: 5px; /* More subtle button shape */
+    padding: 12px; /* Comfortable padding for buttons */
+    font-size: 1rem; /* Adjusted font size for better readability */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effects */
+    border: none; /* Remove default border */
+    font-weight: bold; /* Bold text for better visibility */
+    margin-top: 20px; /* Space above button */
+    width: 100%; /* Full width for buttons */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #007bff; /* Blue button color */
+    color: white; /* White text */
+}
+
+/* Button hover effects */
+.create-profile-btn:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Button disabled state */
+.create-profile-btn:disabled {
+    background-color: #ccc; /* Grey background */
+    cursor: not-allowed; /* Not-allowed cursor */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .create-profile-main {
+        padding: 20px; /* Less padding on smaller screens */
+    }
+
+    .create-profile-header {
+        font-size: 1.5rem; /* Smaller header on mobile */
+    }
+
+    .create-profile-btn {
+        font-size: 0.9rem; /* Adjust button size on mobile */
+    }
+}

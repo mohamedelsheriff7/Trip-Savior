@@ -1,0 +1,244 @@
+/* AdminFinalProfile-specific styles */
+.admin-profile-container {
+    margin: 2% 2%;
+    display: flex; /* Enable Flexbox */
+    justify-content: space-between; /* Space out tables evenly */
+    gap: 20px; /* Adds space between tables */
+    
+}
+
+
+/* Compact table styling */
+.admin-profile-container table {
+    width: 30%; /* Adjust table width to fit next to each other */
+    border: 1px solid rgb(199, 240, 238);
+    border-collapse: collapse;
+}
+
+.admin-profile-container th,
+.admin-profile-container td {
+    padding: 0.1em 0.15em; /* Tighter padding */
+    text-align: center;
+    line-height: 1.1; /* Reduced line height */
+    font-size: 0.75rem; /* Smaller font size for a compact look */
+}
+
+.admin-profile-container th {
+    background-color: rgb(199, 240, 238);
+    color: #333; /* Changed to a darker color for better contrast */
+    font-size: 0.8rem; /* Slightly larger than table data for emphasis */
+}
+
+.admin-profile-container td {
+    font-size: 0.7rem; /* Slightly reduced font size */
+    color: #555; /* Slightly darker text for better readability */
+}
+
+/* Adjusted buttons for compact style with space between buttons */
+.admin-profile-container .btn {
+    margin: 0.25em; /* Slightly increased margin for space between buttons */
+    font-size: 0.8rem; /* Reduced button text size */
+    padding: 0.3em 0.5em; /* Smaller padding */
+    border: 1px solid #ccc;
+}
+
+/* Consistent container and title adjustments */
+.admin-container {
+    margin: 3rem auto; /* Adjusted margin-top to move the table and title down */
+    padding: 0.8rem;
+    max-width: 1000px; /* Reduced max-width for a smaller layout */
+    
+}
+
+.admin-title {
+    margin-bottom: 1rem;
+    margin-top: 1rem; /* Added margin-top to move the title down */
+    font-size: 1.25rem; /* Slightly reduced title font size */
+    color: #333;
+    text-align: center;
+}
+
+/* Compact table for admin */
+.admin-table {
+    width: 100%; /* Keep table width at 100% for each table */
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+.admin-table th,
+.admin-table td {
+    border: 1px solid #ccc;
+    padding: 0.5rem; /* Reduced padding */
+    text-align: center;
+    font-size: 0.8rem; /* Smaller font size */
+}
+
+.admin-table th {
+    background-color: rgb(248, 255, 254);
+    color: #666; /* Adjusted color for softer emphasis */
+}
+
+/* For individual button classes if needed */
+.admin-btn {
+    padding: 0.4rem 0.8rem; /* Compact padding */
+    font-size: 0.8rem; /* Smaller font size */
+    margin-right: 0.5em; /* Added space between buttons horizontally */
+    border: 1px solid #ccc; 
+}
+
+.admin-btn-success {
+    background-color: #5ecc61;
+    color: white;
+    border: 1px solid #ccc;
+}
+
+.admin-btn-danger {
+    background-color: #dd726b;
+    color: white;
+    border: 1px solid #ccc;
+}
+
+.admin-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    border: 1px solid #ccc;
+}
+
+/* Modal adjustments for compact view */
+.admin-modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-modal-content {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 50%; /* Reduced modal width */
+    max-height: 80%; /* Reduced modal height */
+    overflow-y: auto;
+}
+
+.admin-modal-close {
+    font-size: 1.25rem; /* Reduced close button size */
+    cursor: pointer;
+    float: right;
+}
+
+.admin-iframe {
+    width: 100%;
+    height: 400px; /* Reduced iframe height */
+    border: none;
+}
+
+/* Adjusted Sidebar Styles for expanding and collapsing */
+.main-menu {
+    width: 80px; /* Initially collapsed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f4f4f4;
+    color: white;
+    padding-top: 20px;
+    height: 100%;
+    transition: width 0.3s ease; /* Smooth transition for expanding/collapsing */
+    overflow: hidden;
+}
+
+.main-menu:hover {
+    width: 250px; /* Expanded width on hover */
+}
+
+.main-menu ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.main-menu li {
+    padding: 15px;
+}
+
+.main-menu li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-text {
+    margin-left: 10px;
+    display: none; /* Initially hidden text */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Transition for opacity */
+}
+
+.main-menu:hover .nav-text {
+    display: inline; /* Show text when hovered */
+    opacity: 1;
+}
+
+.main-menu li:hover {
+    background-color: #a5a5a5; /* Highlight item on hover */
+}
+
+.main-menu li a i {
+    font-size: 24px; /* Icon size */
+}
+
+/* Adjust the content layout when the sidebar is open */
+.admin-container {
+    margin-left: 250px; /* Adjusted content to be pushed further to the right when sidebar is open */
+    padding: 20px;
+}
+
+.admin-content {
+    display: flex;
+}
+
+.admin-profile {
+    width: 100%;
+    margin-top: -20px;
+}
+
+.admin-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.admin-section {
+    margin-bottom: 30px;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.admin-btn {
+    padding: 10px;
+    margin: 5px;
+}
+
+.admin-btn-success {
+    background-color: rgb(89, 202, 89);
+    color: white;
+}
+
+.admin-btn-danger {
+    background-color: rgb(221, 82, 82);
+    color: white;
+}

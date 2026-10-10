@@ -1,0 +1,16 @@
+/* styles/Search.module.css */
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputContainer {
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 10px 15px;
+    cursor: pointer;
+}
